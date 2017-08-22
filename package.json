@@ -1,0 +1,50 @@
+{
+  "name": "riot-simple-loader-sample",
+  "version": "1.0.0",
+  "description": "scoped css test",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack -w",
+    "lite": "lite-server",
+    "lint": "eslint src/scripts/*.*",
+    "start": "concurrently \"npm run lite\" \"npm run webpack\" \"npm run lint\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nekijak/riot-simple-loader-sample.git"
+  },
+  "author": {
+    "name": "Kentaro Kajino",
+    "email": "kentaro@kajiken.jp"
+  },
+  "keywords": [
+    "riot",
+    "riotjs",
+    "webpack",
+    "loader",
+    "compile"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nekijak/riot-simple-loader-sample/issues"
+  },
+  "homepage": "https://github.com/nekijak/riot-simple-loader-sample",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-riot": "^1.1.0",
+    "concurrently": "^3.5.0",
+    "eslint": "^4.5.0",
+    "eslint-plugin-riot": "^0.1.7",
+    "lite-server": "^2.3.0",
+    "riot-simple-loader": "^1.0.0",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "riot": "^3.6.2"
+  }
+}
